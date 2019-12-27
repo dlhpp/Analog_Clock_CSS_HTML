@@ -1,0 +1,92 @@
+body {
+    background: rgb(5, 198, 247);
+}
+
+section {
+    z-index: 1;
+    position: relative;
+    margin: auto;
+    margin-top: 3vmin;
+    width: 80vmin;
+    height: 80vmin;
+    background: white;
+    border-radius: 50%;
+
+}
+
+#secondhand {
+    --rotation: 135;
+    z-index: 20;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 36%;
+    height: .5vmin;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    /* transform: translate(139%, -50%) rotate(135deg); */
+    transform-origin: 0% 50%;
+    transform: translate(139%, -50%) rotate(calc(var(--rotation) * 1deg));
+    background: red;
+}
+
+
+.hour12,
+.hour1,
+.hour2,
+.hour3,
+.hour4,
+.hour5 {
+    position: absolute;
+    width: 55vmin;
+    height: 2vmin;
+    top: 50%;
+    left: 50%;
+    background: rgb(243, 6, 125);
+    border-left: 7vmin solid black;
+    border-right: 7vmin solid black;
+    transform-origin: 50% 50%;
+}
+
+
+.hour12 { transform: translate(-50%, -50%) rotate(90deg); }
+.hour1 { transform: translate(-50%, -50%) rotate(-60deg); }
+.hour2 { transform: translate(-50%, -50%) rotate(-30deg); }
+.hour3 { transform: translate(-50%, -50%) rotate(0deg); }
+.hour4 { transform: translate(-50%, -50%) rotate(30deg); }
+.hour5 { transform: translate(-50%, -50%) rotate(60deg); }
+
+/* .hour1 { transform: rotate(120deg) translate(17vmin, 30vmin); } */
+
+/* .hour2 { transform: rotate(150deg) translate(29vmin, 18vmin); } */
+
+
+/* .hour4 { transform: rotate(210deg) translate(30vmin, -17vmin); } */
+
+/* .hour5 { transform: rotate(240deg) translate(17vmin, -30vmin); }  */
+
+
+
+.line {
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    background: blue;
+    transform-origin: 50% 0%;
+}
+
+.horizontal { transform: rotate(0deg); }
+
+.vertical { transform: rotate(90deg); }
+
+.line30 { transform: rotate(300deg); }
+.line60 { transform: rotate(60deg); }
+.line90 { transform: rotate(90deg); }
+.line120 { transform: rotate(120deg); }
+.line150 { transform: rotate(150deg); }
+.line180 { transform: rotate(180deg); }
+.line210 { transform: rotate(210deg); }
+.line240 { transform: rotate(240deg); }
+.line270 { transform: rotate(270deg); }

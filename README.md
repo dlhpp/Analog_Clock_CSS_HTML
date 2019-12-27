@@ -1,2 +1,7 @@
 # Analog_Clock_CSS_HTML
-Analog Clock using only html, css, javascript; no images or svg.
+
+* built with HTML, CSS and Javascript 
+* no SVG
+* no images
+
+## Load it in your browser here: [Analog Clock](https://dlhpp.github.io/clock_css_no_svg/index.html)
