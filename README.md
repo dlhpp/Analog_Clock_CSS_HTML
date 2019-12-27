@@ -4,4 +4,4 @@
 * no SVG
 * no images
 
-## Load it in your browser here: [Analog Clock](https://dlhpp.github.io/clock_css_no_svg/index.html)
+## Load it in your browser here: [Analog Clock](https://dlhpp.github.io/Analog_Clock_CSS_HTML/)
