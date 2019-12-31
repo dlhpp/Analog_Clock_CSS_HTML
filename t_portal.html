@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        :root {
+            --clockwidth: 40vw;
+            --clockheight: 40vw;
+        }
+        *, body, *::after, *::before {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        section {
+            position: relative;
+        }
+        div#topleft {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(100% - var(--clockwidth));
+            height: var(--clockheight);
+            background: transparent;
+            border: 1px solid green;
+        }
+        div#topright {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: var(--clockwidth);
+            height: var(--clockheight);
+            background: transparent;
+            border: 1px solid blue;
+        }
+        div#bottom {
+            position: absolute;
+            top: var(--clockheight);
+            left: 0;
+            width: 100%;
+            height: calc(100% - var(--clockheight));;
+            background: transparent;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="topleft"></div>
+        <div id="topright"></div>
+        <div id="bottom"></div>
+    </section>
+</body>
+</html>
